@@ -1,5 +1,5 @@
 export enum Events {
-  Show = 'show',
-  HIDE = 'hide',
+  SHOW = 'SHOW',
+  HIDE = 'HIDE',
   HIDE_ALL = 'HIDE_ALL',
 }
