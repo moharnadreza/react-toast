@@ -37,7 +37,7 @@ export const emitter = (): Emitter => {
     },
 
     /**
-     * Register an event handler for the given event name.
+     * Remove an event handler for the given event name.
      * @param {Events} type Type of event to unregister `handler` from.
      */
     off(event: Events) {
