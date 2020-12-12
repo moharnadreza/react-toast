@@ -15,11 +15,12 @@ interface Emitter {
 export const emitter = (): Emitter => {
   const events = new Map()
 
+  // TODO: Handle timeout for toast
   return {
     /**
      * Register an event handler for the given event name.
      * @param {Events} type Type of event to listen for
-     * @param {Function} callback Function to call in response to given event
+     * @param {Handler} callback Handler to call in response to given event
      */
     on<T = any>(event: Events, callback: Handler<T>) {
       if (!events.has(event)) events.set(event, [])
@@ -29,7 +30,7 @@ export const emitter = (): Emitter => {
     /**
      * Invoke all handlers for the given event name.
      * @param {Events} type The event type to invoke
-     * @param {Any} args Any value (object is recommended and powerful), passed to each handler
+     * @param {Any} args Any value passed to each handler
      */
     emit<T = any>(event: Events, args: T) {
       if (!events.has(event)) return

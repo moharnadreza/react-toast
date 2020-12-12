@@ -1,6 +1,20 @@
+/* TODO: Separate styles */
+
 * {
   padding: 0;
   margin: 0;
+}
+
+button {
+  background-color: black;
+  padding: 12px 24px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 .toastContainer {
@@ -12,6 +26,7 @@
   position: fixed;
   left: 20px;
   bottom: 20px;
+  user-select: none;
 }
 
 .toast {
@@ -43,7 +58,7 @@
   transition: all 100ms ease-in-out;
 }
 
-.toast .close:hover {
+.toast:hover .close {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
