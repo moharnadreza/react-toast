@@ -1,4 +1,4 @@
-import { Events } from './types'
+import { Events } from '../types'
 
 // An event handler will take an event argument
 // and should not return a value
