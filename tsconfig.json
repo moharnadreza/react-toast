@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types"],
+  "include": ["./src/**/*.ts", "./src/**/*.d.ts"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -17,6 +17,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
     "noEmit": true
   }
 }

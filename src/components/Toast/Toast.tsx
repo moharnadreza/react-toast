@@ -1,24 +1,32 @@
 import React, { FC } from 'react'
-import { Close, Info } from '../icons'
-import '../../Toast.css'
+import { Close, Success } from '../'
+import { Position } from 'types'
+import './Toast.css'
 
 interface IToast {
   id: string
-  text: string
-  backgroundColor: string
-  onClick: (id: string) => void
+  content: string
+  delay: number
+  position?: Position
+  onClose?: (id: string) => void
 }
 
-const Toast: FC<IToast> = ({ id, backgroundColor, onClick }) => {
+const Toast: FC<IToast> = ({
+  id,
+  content,
+  // delay,
+  // position = 'top-left',
+  onClose = () => {},
+}) => {
   return (
-    <div className="toast" style={{ backgroundColor }}>
+    <div className="toast info">
       <div className="icon">
-        <Info />
+        <Success />
       </div>
-      <div className="text">
-        <p>{id}</p>
+      <div className="content">
+        <p>{`${id} - ${content}`}</p>
       </div>
-      <div className="close" onClick={() => onClick(id)}>
+      <div className="close" onClick={() => onClose(id)}>
         <Close />
       </div>
     </div>
