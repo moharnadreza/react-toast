@@ -1,2 +1,2 @@
 export * from './Toast'
-export * from './icons'
+export * from './Icon'
