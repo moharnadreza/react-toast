@@ -1,30 +1,22 @@
 import React, { FC } from 'react'
 import { Close, Success } from '../'
-import { Position } from 'types'
+import { Toast, Position } from 'types'
 import './Toast.css'
 
-interface IToast {
-  id: string
-  content: string
+export interface IToast extends Toast {
   delay: number
   position?: Position
-  onClose?: (id: string) => void
+  onClose: (id: string) => void
 }
 
-const Toast: FC<IToast> = ({
-  id,
-  content,
-  // delay,
-  // position = 'top-left',
-  onClose = () => {},
-}) => {
+const Toast: FC<IToast> = ({ id, type, content, onClose }) => {
   return (
-    <div className="toast info">
+    <div className={`toast ${type}`}>
       <div className="icon">
         <Success />
       </div>
       <div className="content">
-        <p>{`${id} - ${content}`}</p>
+        <p>{content}</p>
       </div>
       <div className="close" onClick={() => onClose(id)}>
         <Close />

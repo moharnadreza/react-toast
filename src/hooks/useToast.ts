@@ -1,12 +1,14 @@
 import { useReducer } from 'react'
 
+import { Toast } from 'types'
+
 type TAction =
-  | { type: 'ADD'; toast: string }
+  | { type: 'ADD'; toast: Toast }
   | { type: 'REMOVE'; id: string }
   | { type: 'REMOVE_ALL' }
 
 interface IState {
-  toasts: string[]
+  toasts: Toast[]
 }
 
 const initialState: IState = {
@@ -23,7 +25,7 @@ const toastReducer = (state: IState, action: TAction): IState => {
     case 'REMOVE': {
       return {
         ...state,
-        toasts: [...state.toasts.filter(toast => toast !== action.id)],
+        toasts: [...state.toasts.filter(toast => toast.id !== action.id)],
       }
     }
     case 'REMOVE_ALL':
