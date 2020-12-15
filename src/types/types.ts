@@ -4,13 +4,25 @@ export enum Events {
   HIDE_ALL = 'hideAll',
 }
 
-export interface Toast {
-  id: string
-  content: string
-  type: Type
+export type Type = 'default' | 'success' | 'error' | 'info' | 'warning'
+
+export type ToastContent = string
+
+export type ToastConfig = {
+  backgroundColor?: string
 }
 
-export type Type = 'success' | 'error' | 'info' | 'warning'
+export interface Toast {
+  id: string
+  content: ToastContent
+  type: Type
+  config?: ToastConfig
+}
+
+export interface ToastProvider {
+  content: ToastContent
+  config?: ToastConfig
+}
 
 export type Position =
   | 'top-left'
