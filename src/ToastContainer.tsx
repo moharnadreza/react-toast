@@ -1,70 +1,48 @@
 import React, { FC, useCallback, useEffect } from 'react'
 import { Toast } from './components'
 import { useToast } from './hooks'
-import { emitter, Events } from './utils'
+import { emitter } from './utils'
+import { Events } from './types'
 import './Toast.css'
 
-interface IToast {}
+interface IToastContainer {}
 
-const event = emitter()
-
-const ToastContainer: FC<IToast> = () => {
+const ToastContainer: FC<IToastContainer> = () => {
   const { toasts, dispatch } = useToast()
+
+  // const delay = 10000
 
   useEffect(() => {
     // TODO: Move this stuff to toaster function
-    event.on(Events.SHOW, (toast: string) => {
+    emitter.on(Events.SHOW, (toast: any) => {
       dispatch({
         type: 'ADD',
         toast,
       })
     })
-    event.on(Events.HIDE, (id: string) => {
+    emitter.on(Events.HIDE, (id: string) => {
       dispatch({
         type: 'REMOVE',
         id,
       })
     })
-    event.on(Events.HIDE_ALL, () => {
+    emitter.on(Events.HIDE_ALL, () => {
       dispatch({
         type: 'REMOVE_ALL',
       })
     })
   }, [])
 
-  const onClick = useCallback((id: string) => {
-    event.emit(Events.HIDE, id)
+  const onClose = useCallback((id: string) => {
+    emitter.emit(Events.HIDE, id)
   }, [])
 
   return (
-    <>
-      {/* TODO: Remove add and hideAll buttons */}
-      <button
-        onClick={() => {
-          event.emit(
-            Events.SHOW,
-            // TODO: Create a util function to generate toast, maybe use shortid for id generation
-            Math.random()
-              .toFixed(2)
-              .toString()
-          )
-        }}
-      >
-        Add new toast
-      </button>
-      <button
-        onClick={() => {
-          event.emit(Events.HIDE_ALL, [])
-        }}
-      >
-        Hide all
-      </button>
-      <div className="toastContainer">
-        {toasts.map((id, i) => (
-          <Toast id={id} text={i.toString()} backgroundColor={`#8900FF`} onClick={onClick} />
-        ))}
-      </div>
-    </>
+    <div className="toastContainer">
+      {toasts.map((toast, i) => (
+        <Toast key={i} {...toast} onClose={onClose} />
+      ))}
+    </div>
   )
 }
 
