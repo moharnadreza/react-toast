@@ -1,17 +1,15 @@
-import { Type, Toast } from 'types'
+import shortid from 'shortid'
+import { Type, ToastProvider, Toast } from 'types'
 
-interface IToaster {
+export interface Toaster extends ToastProvider {
   type: Type
-  content: string
 }
 
-export const toaster = ({ type, content }: IToaster): Toast => {
+export const toaster = ({ content, type, config }: Toaster): Toast => {
   return {
-    // TODO: use shortid
-    id: Math.random()
-      .toFixed(5)
-      .toString(),
+    id: shortid.generate(),
     content,
     type,
+    config,
   }
 }
