@@ -12,7 +12,7 @@ interface Emitter {
   off(event: Events): void
 }
 
-export const emitter = (): Emitter => {
+export const emitter = ((): Emitter => {
   const events = new Map()
 
   // TODO: Handle timeout for toast
@@ -45,4 +45,4 @@ export const emitter = (): Emitter => {
       events.delete(event)
     },
   }
-}
+})()
