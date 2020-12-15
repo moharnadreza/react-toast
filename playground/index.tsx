@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { ToastContainer } from '../dist'
+import { ToastContainer, toast } from '../dist'
 
 const App = () => {
   return (
@@ -15,8 +15,10 @@ const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'black',
       }}
     >
+      <button onClick={() => toast('Hey there 👋')}>Say hi</button>
       <ToastContainer />
     </div>
   )
