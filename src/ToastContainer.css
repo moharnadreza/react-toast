@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: black;
+  padding: 12px 24px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.toastContainer {
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  user-select: none;
+}

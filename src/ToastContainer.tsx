@@ -3,7 +3,7 @@ import { Toast } from './components'
 import { useToast } from './hooks'
 import { emitter } from './utils'
 import { Events } from './types'
-import './Toast.css'
+import './ToastContainer.css'
 
 interface IToastContainer {}
 
@@ -31,7 +31,7 @@ const ToastContainer: FC<IToastContainer> = () => {
         type: 'REMOVE_ALL',
       })
     })
-  }, [])
+  }, [dispatch])
 
   const onClose = useCallback((id: string) => {
     emitter.emit(Events.HIDE, id)
