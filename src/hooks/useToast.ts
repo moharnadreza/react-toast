@@ -1,8 +1,8 @@
 import { useReducer } from 'react'
 
-import { Toast } from 'types'
+import { Toast } from '../types'
 
-type TAction =
+export type TAction =
   | { type: 'ADD'; toast: Toast }
   | { type: 'REMOVE'; id: string }
   | { type: 'REMOVE_ALL' }

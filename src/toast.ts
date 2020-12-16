@@ -18,4 +18,6 @@ toast.info = (content: ToastContent, config?: ToastConfig) =>
 toast.warn = (content: ToastContent, config?: ToastConfig) =>
   applyToast({ content, type: 'warning', config })
 
+toast.hideAll = () => emitter.emit(Events.HIDE_ALL)
+
 export { toast }

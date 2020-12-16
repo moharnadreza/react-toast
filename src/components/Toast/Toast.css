@@ -1,8 +1,9 @@
 :root {
-  --success: #00c4ae;
-  --error: #cc0056;
-  --info: #0b5df5;
-  --warning: #f29f00;
+  --default: #8b1dd0;
+  --success: #27d0b2;
+  --error: #c52965;
+  --info: #004eff;
+  --warning: #d0761d;
   --black: #221d26;
   --white: white;
 }
@@ -14,9 +15,13 @@
   color: var(--white);
   display: flex;
   align-items: flex-start;
-  line-height: 1.85;
-  font-size: 12px;
+  line-height: 1.65;
+  font-size: 14px;
   border-radius: 15px;
+}
+
+.toast.default {
+  background-color: var(--default);
 }
 
 .toast.success {
@@ -40,11 +45,12 @@
 }
 
 .toast .content p {
+  padding: 0;
+  margin: 0;
   min-height: 22px;
 }
 
 .toast .close {
-  position: relative;
   margin-left: 10px;
   width: 22px;
   height: 22px;
