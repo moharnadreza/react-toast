@@ -1,2 +1,1 @@
-export { default as Toast } from './Toast'
-export { IToast } from './Toast'
+export { default as Toast, IToast } from './Toast'
