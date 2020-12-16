@@ -1,20 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  background-color: black;
-  padding: 12px 24px;
-  color: white;
-  font-size: 14px;
-  border: none;
-  margin: 0 5px;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-}
-
 .toastContainer {
   overflow: hidden;
   overflow-x: auto;
@@ -22,7 +5,37 @@ button {
   flex-direction: column;
   gap: 20px;
   position: fixed;
-  left: 20px;
-  bottom: 20px;
   user-select: none;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-center {
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-center {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
 }
