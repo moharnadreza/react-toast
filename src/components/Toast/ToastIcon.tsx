@@ -3,6 +3,7 @@ import { Success, Close, Info, Warning } from '..'
 import { Type } from '../../types'
 
 interface IToastIcon {
+  /** Icon type */
   type: Type
 }
 

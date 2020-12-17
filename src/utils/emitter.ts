@@ -18,7 +18,7 @@ export const emitter = ((): Emitter => {
   return {
     /**
      * Register an event handler for the given event name.
-     * @param {Events} type Type of event to listen for
+     * @param {Events} event Type of event to listen for
      * @param {Handler} callback Handler to call in response to given event
      */
     on<T = any>(event: Events, callback: Handler<T>) {
@@ -28,7 +28,7 @@ export const emitter = ((): Emitter => {
 
     /**
      * Invoke all handlers for the given event name.
-     * @param {Events} type The event type to invoke
+     * @param {Events} event The event type to invoke
      * @param {Any} args Any value passed to each handler
      */
     emit<T = any>(event: Events, args: T) {
@@ -36,10 +36,7 @@ export const emitter = ((): Emitter => {
       events.get(event).forEach((callback: Handler) => callback(args))
     },
 
-    /**
-     * Remove an event handler for the given event name.
-     * @param {Events} type Type of event to unregister `handler` from.
-     */
+    /** Remove all events. */
     off() {
       events.clear()
     },

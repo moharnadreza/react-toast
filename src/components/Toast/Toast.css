@@ -1,18 +1,18 @@
 :root {
-  --default: #8b1dd0;
-  --success: #27d0b2;
-  --error: #c52965;
-  --info: #004eff;
-  --warning: #d0761d;
-  --black: #221d26;
-  --white: white;
+  --toast-default: #8b1dd0;
+  --toast-success: #27d0b2;
+  --toast-error: #c52965;
+  --toast-info: #004eff;
+  --toast-warning: #d0761d;
+  --toast-black: #221d26;
+  --toast-white: #ffffff;
 }
 
 .toast {
   padding: 15px;
   min-width: 300px;
   max-width: 400px;
-  color: var(--white);
+  color: var(--toast-white);
   display: flex;
   align-items: flex-start;
   line-height: 1.65;
@@ -21,23 +21,23 @@
 }
 
 .toast.default {
-  background-color: var(--default);
+  background-color: var(--toast-default);
 }
 
 .toast.success {
-  background-color: var(--success);
+  background-color: var(--toast-success);
 }
 
 .toast.error {
-  background-color: var(--error);
+  background-color: var(--toast-error);
 }
 
 .toast.info {
-  background-color: var(--info);
+  background-color: var(--toast-info);
 }
 
 .toast.warning {
-  background-color: var(--warning);
+  background-color: var(--toast-warning);
 }
 
 .toast .content {

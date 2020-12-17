@@ -6,6 +6,14 @@ export enum Events {
 
 export type Type = 'default' | 'success' | 'error' | 'info' | 'warning'
 
+export type Position =
+  | 'top-left'
+  | 'top-center'
+  | 'top-right'
+  | 'bottom-left'
+  | 'bottom-center'
+  | 'bottom-right'
+
 export type ToastContent = string
 
 export type ToastConfig = {
@@ -24,11 +32,3 @@ export interface ToastProvider {
   content: ToastContent
   config?: ToastConfig
 }
-
-export type Position =
-  | 'top-left'
-  | 'top-center'
-  | 'top-right'
-  | 'bottom-left'
-  | 'bottom-center'
-  | 'bottom-right'

@@ -6,7 +6,9 @@ import { Events, Position } from './types'
 import './ToastContainer.css'
 
 interface IToastContainer {
+  /** Position of toast */
   position?: Position
+  /** Delay for toast */
   delay?: number
 }
 
@@ -16,7 +18,9 @@ const ToastContainer: FC<IToastContainer> = ({ position = 'bottom-left', delay =
   useEffect(() => {
     toastDispatcher({ dispatch, delay })
 
-    return () => emitter.off()
+    return () => {
+      emitter.off()
+    }
   }, [dispatch, delay])
 
   const onClose = useCallback((id: string) => {
