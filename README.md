@@ -87,10 +87,10 @@ const customToast = () =>
   })
 ```
 
-| Property          | Type     | Description               | Default                                      |
-| :---------------- | :------- | :------------------------ | :------------------------------------------- |
-| `backgroundColor` | `string` | background color of toast | based on toast type, e.g. `success` is green |
-| `color`           | `string` | color of text in toast    | `#ffffff`                                    |
+| Property          | Type     | Description               | Default                                           |
+| :---------------- | :------- | :------------------------ | :------------------------------------------------ |
+| `backgroundColor` | `string` | background color of toast | based on toast type, e.g. `success` will be green |
+| `color`           | `string` | color of text in toast    | `#ffffff`                                         |
 
 ## Contribute 🍻
 
