@@ -94,7 +94,7 @@ const customToast = () =>
 
 ## Contribute 🍻
 
-Please check out [contributing guide]() which will cover you up.
+Please check out [contributing guide](https://github.com/moharnadreza/react-toast/blob/develop/CONTRIBUTING.md) which will cover you up.
 
 ## License
 
