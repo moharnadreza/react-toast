@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./toast.svg" alt="React Toast" />
+  <img src="https://user-images.githubusercontent.com/53334880/102553638-6960d780-40d8-11eb-8816-ae151308a07e.png" alt="React Toast" />
   <h3 align="center">React Toast</h3>
 </p>
 
