@@ -1,7 +1,7 @@
 {
   "name": "react-toast",
-  "version": "0.0.1",
-  "description": "A minimal toast notification for React",
+  "version": "1.0.0",
+  "description": "A minimal toast notification package for React.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "module": "dist/react-toast.esm.js",
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/moharnadreza/react-toast",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moharnadreza/react-toast.git"
+    "url": "git+https://github.com/moharnadreza/react-toast.git"
   },
   "bugs": {
     "url": "https://github.com/moharnadreza/react-toast/issues"
@@ -69,5 +69,8 @@
   },
   "dependencies": {
     "shortid": "^2.2.16"
+  },
+  "directories": {
+    "test": "test"
   }
 }
