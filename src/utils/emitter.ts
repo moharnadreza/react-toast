@@ -9,13 +9,12 @@ interface Emitter {
 
   emit<T = any>(event: Events, args?: T): void
 
-  off(event: Events): void
+  off(): void
 }
 
 export const emitter = ((): Emitter => {
   const events = new Map()
 
-  // TODO: Handle timeout for toast
   return {
     /**
      * Register an event handler for the given event name.
@@ -41,8 +40,8 @@ export const emitter = ((): Emitter => {
      * Remove an event handler for the given event name.
      * @param {Events} type Type of event to unregister `handler` from.
      */
-    off(event: Events) {
-      events.delete(event)
+    off() {
+      events.clear()
     },
   }
 })()

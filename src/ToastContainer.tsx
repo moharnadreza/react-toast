@@ -15,6 +15,8 @@ const ToastContainer: FC<IToastContainer> = ({ position = 'bottom-left', delay }
 
   useEffect(() => {
     toastDispatcher({ dispatch, delay })
+
+    return () => emitter.off()
   }, [dispatch, delay])
 
   const onClose = useCallback((id: string) => {
