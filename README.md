@@ -1,6 +1,6 @@
 <p align="center">
   <img src="./toast.svg" alt="React Toast" />
-  <h4 align="center">React toast</h4>
+  <h4 align="center">React Toast</h4>
 </p>
 
 <h6 align="center">
@@ -49,9 +49,9 @@ const App = () => {
 
 #### Toast Container
 
-To use react-toast, you need to put `ToastContainer` in a top-level component in your application. e.g. `App.js`
+To use `react-toast`, you need to put `ToastContainer` in a top-level component in your application. e.g. `App.js`
 
-`ToastContainer` takes some props, here's a list of them:
+It can take some props, here's a list of them:
 
 | Props         | Type                                                                                            | Description       | Default       |
 | :------------ | :---------------------------------------------------------------------------------------------- | :---------------- | :------------ |
@@ -60,7 +60,7 @@ To use react-toast, you need to put `ToastContainer` in a top-level component in
 
 #### Toast
 
-There are 5 base toast type available, `success`, `error`, `info` and `warn` for example:
+There are 4 base toast type available, `success`, `error`, `info` and `warn`. For instance:
 
 ```js
 const success = () => toast.success('Message sent successfully!')
@@ -94,7 +94,7 @@ const customToast = () =>
 
 ## Contribute 🍻
 
-Please Check out [contributing guide]() which will cover you up. Thanks in advance!
+Please check out [contributing guide]() which will cover you up.
 
 ## License
 
