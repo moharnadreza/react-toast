@@ -1,5 +1,6 @@
 <p align="center">
   <img src="./toast.svg" alt="React Toast" />
+  <h4 align="center">React toast</h4>
 </p>
 
 <h6 align="center">
