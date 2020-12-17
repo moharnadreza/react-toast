@@ -1,9 +1,9 @@
 .toastContainer {
   overflow: hidden;
   overflow-x: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+
+  grid-gap: 20px;
   position: fixed;
   user-select: none;
 }

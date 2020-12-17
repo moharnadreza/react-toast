@@ -12,7 +12,7 @@ interface IToastContainer {
   delay?: number
 }
 
-const ToastContainer: FC<IToastContainer> = ({ position = 'bottom-left', delay = 6000 }) => {
+const ToastContainer: FC<IToastContainer> = ({ position = 'bottom-left', delay }) => {
   const { toasts, dispatch } = useToast()
 
   useEffect(() => {
