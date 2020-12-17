@@ -1,0 +1,76 @@
+{
+  "name": "react-toast",
+  "version": "1.0.0",
+  "description": "A minimal toast notification package for React.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/react-toast.esm.js",
+  "scripts": {
+    "dev": "tsdx watch",
+    "start": "cd playground && yarn start",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "Mohammadreza Ziadzadeh <moharnadreza@gmail.com>",
+  "homepage": "https://github.com/moharnadreza/react-toast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moharnadreza/react-toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moharnadreza/react-toast/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "toast",
+    "minimal",
+    "react toast",
+    "react notification"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/react-toast.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-toast.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/shortid": "^0.0.29",
+    "husky": "^4.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup-plugin-postcss": "^3.1.8",
+    "size-limit": "^4.9.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "dependencies": {
+    "shortid": "^2.2.16"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

@@ -1,0 +1,32 @@
+import React, { FC } from 'react'
+import { Close } from '../'
+import { Toast as ToastType } from '../../types'
+import { toastIcon as Icon } from './ToastIcon'
+import './Toast.css'
+
+export interface IToast extends ToastType {
+  /** Will trigger on clicking close button of toast */
+  onClose: (id: string) => void
+}
+
+const Toast: FC<IToast> = ({
+  id,
+  content,
+  type,
+  config: { backgroundColor, color } = {},
+  onClose,
+}) => {
+  return (
+    <div className={`toast ${type}`} style={{ backgroundColor, color }}>
+      <div className="icon">{Icon({ type })}</div>
+      <div className="content">
+        <p>{content}</p>
+      </div>
+      <div className="close" onClick={() => onClose(id)}>
+        <Close />
+      </div>
+    </div>
+  )
+}
+
+export default Toast

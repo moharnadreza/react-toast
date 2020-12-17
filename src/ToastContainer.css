@@ -1,0 +1,41 @@
+.toastContainer {
+  overflow: hidden;
+  overflow-x: auto;
+  display: grid;
+
+  grid-gap: 20px;
+  position: fixed;
+  user-select: none;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-center {
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-center {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
