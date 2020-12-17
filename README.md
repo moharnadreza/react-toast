@@ -14,7 +14,7 @@
   <a href="https://www.npmjs.com/package/react-toast" target="_blank">
   <img src="https://img.shields.io/npm/dm/react-toast?color=%2344cc10" />
   </a>
-  <a href="https://bundlephobia.com/result?p=react-toast" target="_blank">
+  <a href="https://bundlephobia.com/result?p=react-toast@1.0.0" target="_blank">
   <img src="https://img.shields.io/bundlephobia/minzip/react-toast/1.0.0?color=%23165be4">
   </a>
   <a href="https://twitter.com/moharnadreza" target="_blank">
