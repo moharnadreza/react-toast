@@ -15,7 +15,7 @@
   color: var(--toast-white);
   display: flex;
   align-items: flex-start;
-  line-height: 1.65;
+  line-height: 1.6;
   font-size: 14px;
   border-radius: 15px;
 }
@@ -47,7 +47,6 @@
 .toast .content p {
   padding: 0;
   margin: 0;
-  min-height: 22px;
 }
 
 .toast .close {
