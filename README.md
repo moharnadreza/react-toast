@@ -17,9 +17,6 @@
   <a href="https://bundlephobia.com/result?p=react-toast@1.0.1" target="_blank">
   <img src="https://img.shields.io/bundlephobia/minzip/react-toast/1.0.1?color=%23165be4">
   </a>
-  <a href="https://twitter.com/moharnadreza" target="_blank">
-  <img src="https://img.shields.io/twitter/follow/moharnadreza?label=Follow&style=social"  />
-  </a>
 </p>
 
 ## Get started
