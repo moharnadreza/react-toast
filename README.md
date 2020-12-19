@@ -47,7 +47,7 @@ const App = () => {
 
 ### Demo
 
-Here's a little [demo](https://codesandbox.io/s/byqvk).
+[Demo](https://codesandbox.io/s/byqvk) on CodeSandbox.
 
 ### Docs
 
@@ -81,7 +81,7 @@ fetch('someRandomUrl')
 
 **Custom toast**
 
-Of course you can display custom toasts 😅, here's a gist and a list of options that are available for customization:
+You can display custom styled toasts, here's an example and a list of options that are available for customization:
 
 ```js
 const customToast = () =>
