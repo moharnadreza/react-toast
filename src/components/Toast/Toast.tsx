@@ -5,7 +5,6 @@ import { toastIcon as Icon } from './ToastIcon'
 import './Toast.css'
 
 export interface IToast extends ToastType {
-  /** Will trigger on clicking close button of toast */
   onClose: (id: string) => void
 }
 

@@ -8,7 +8,6 @@ interface IToastDispatcher {
 }
 
 export const toastDispatcher = ({ dispatch, delay }: IToastDispatcher) => {
-  /** Add a new toast to currenct toasts. */
   emitter.on(Events.SHOW, (toast: Toast) => {
     dispatch({ type: 'ADD', toast })
 
@@ -18,9 +17,7 @@ export const toastDispatcher = ({ dispatch, delay }: IToastDispatcher) => {
       }, delay)
   })
 
-  /** Remove triggered toast from currenct toasts list. */
   emitter.on(Events.HIDE, (id: string) => dispatch({ type: 'REMOVE', id }))
 
-  /** Remove all toasts. */
   emitter.on(Events.HIDE_ALL, () => dispatch({ type: 'REMOVE_ALL' }))
 }

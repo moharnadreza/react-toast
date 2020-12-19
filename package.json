@@ -67,9 +67,7 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "dependencies": {
-    "shortid": "^2.2.16"
-  },
+  "dependencies": {},
   "directories": {
     "test": "test"
   }
