@@ -1,7 +1,7 @@
 {
   "name": "react-toast",
-  "version": "1.0.0",
-  "description": "A minimal toast notification package for React.",
+  "version": "1.0.1",
+  "description": "Minimal toast notifications for React.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "module": "dist/react-toast.esm.js",

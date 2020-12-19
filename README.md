@@ -4,7 +4,7 @@
 </p>
 
 <h6 align="center">
-  A minimal toast notification package for React.
+  Minimal toast notifications for React.
 </h3>
 
 <p align="center">
