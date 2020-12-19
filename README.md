@@ -45,6 +45,10 @@ const App = () => {
 }
 ```
 
+### Demo
+
+Here's a little [demo](https://codesandbox.io/s/byqvk).
+
 ### Docs
 
 #### Toast Container
@@ -91,10 +95,6 @@ const customToast = () =>
 | :---------------- | :------- | :------------------------ | :------------------------------------------------ |
 | `backgroundColor` | `string` | background color of toast | based on toast type, e.g. `success` will be green |
 | `color`           | `string` | color of text in toast    | `#ffffff`                                         |
-
-## Contribute 🍻
-
-Please check out [contributing guide](https://github.com/moharnadreza/react-toast/blob/develop/CONTRIBUTING.md) which will cover you up.
 
 ## License
 
