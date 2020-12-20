@@ -23,8 +23,16 @@
 
 ### Quick start
 
-```
+**Install with yarn**
+
+```sh
 yarn add react-toast
+```
+
+**Install with NPM**
+
+```sh
+npm install react-toast
 ```
 
 ```jsx
