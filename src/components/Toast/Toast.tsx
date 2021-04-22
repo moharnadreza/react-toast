@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Close } from '../'
+import { Close } from '../Icons'
 import { Toast as ToastType } from '../../types'
 import { toastIcon as Icon } from './ToastIcon'
 import './Toast.css'

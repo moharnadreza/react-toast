@@ -1,5 +1,5 @@
 import React from 'react'
-import { Success, Close, Info, Warning } from '..'
+import { Success, Close, Info, Warning } from '../Icons'
 import { Type } from '../../types'
 
 interface IToastIcon {
