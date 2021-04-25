@@ -1,4 +1,4 @@
-import { emitter } from './'
+import { emitter } from './emitter'
 import { Events, Toast } from '../types'
 import { TAction } from '../hooks'
 
