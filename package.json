@@ -1,6 +1,6 @@
 {
   "name": "react-toast",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Minimal toast notifications for React.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
