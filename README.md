@@ -65,7 +65,7 @@ It can take some props, here's a list of them:
 | Props         | Type                                                                                            | Description       | Default       |
 | :------------ | :---------------------------------------------------------------------------------------------- | :---------------- | :------------ |
 | `position`    | `top-left` \| `top-center` \| `top-right` \| `bottom-left` \| `bottom-center` \| `bottom-right` | position of toast | `bottom-left` |
-| `deplay` (ms) | `number`                                                                                        | delay for toast   | `6000`        |
+| `delay` (ms) | `number`                                                                                        | delay for toast   | `6000`        |
 
 #### Toast
 
