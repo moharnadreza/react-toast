@@ -18,9 +18,10 @@ const initialState: IState = {
 const toastReducer = (state: IState, action: TAction): IState => {
   switch (action.type) {
     case 'ADD':
+      let checkUnique = state.toasts.findIndex(t => t && action.toast.config?.label)
       return {
         ...state,
-        toasts: [...state.toasts, action.toast],
+        toasts: checkUnique < 0 ? [...state.toasts, action.toast] : [...state.toasts],
       }
     case 'REMOVE': {
       return {
