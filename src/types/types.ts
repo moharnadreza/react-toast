@@ -19,6 +19,7 @@ export type ToastContent = string
 export type ToastConfig = {
   backgroundColor?: string
   color?: string
+  label?: string
 }
 
 export interface Toast {
